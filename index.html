@@ -1,15 +1,124 @@
+<!-- ===================== index.html ===================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body bgcolor="red">
-   <center>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-       <h2> Manish Baag</h2>
-    </center>
+  <!-- SEO -->
+  <title>Your Name | Professional Web Developer</title>
+  <meta name="description" content="Professional web developer specializing in scalable, high-performance web applications.">
+  <meta property="og:title" content="Your Name | Web Developer">
+  <meta property="og:description" content="Portfolio, projects, and tutorials by a professional web developer.">
+  <meta property="og:type" content="website">
+
+  <!-- Analytics (replace GA_ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'GA_ID');
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">YourName.dev</div>
+    <div class="nav-actions">
+      <button id="themeToggle">🌙</button>
+      <i class="fas fa-bars hamburger"></i>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home / Slider -->
+  <section class="slider" id="home">
+    <img id="slider-image" src="images/slide1.jpg" alt="Hero image" loading="eager" />
+    <div class="slider-content">
+      <h1>Professional Web Developer</h1>
+      <p>I build scalable, high-performance web applications and solve complex web problems.</p>
+      <a href="#portfolio" class="btn">View Portfolio</a>
+    </div>
+    <div class="slider-controls">
+      <span id="prev">❮</span>
+      <span id="next">❯</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I am a software developer specialized in modern web technologies, clean architecture, and performance-driven development.</p>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div class="service-grid">
+      <div class="service-card">Frontend Development</div>
+      <div class="service-card">Backend Development</div>
+      <div class="service-card">Full-Stack Solutions</div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <a class="portfolio-item" href="project.html"><img src="images/p1.jpg"><p>Project Details</p></a>
+      <a class="portfolio-item" href="project.html"><img src="images/p2.jpg"><p>Project Details</p></a>
+      <a class="portfolio-item" href="project.html"><img src="images/p3.jpg"><p>Project Details</p></a>
+      <a class="portfolio-item" href="project.html"><img src="images/p4.jpg"><p>Project Details</p></a>
+    </div>
+  </section>
+
+  <!-- YouTube -->
+  <section class="youtube" id="videos">
+    <h2>YouTube Showcase</h2>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" loading="lazy"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" loading="lazy"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" loading="lazy"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Your Name</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
